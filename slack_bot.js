@@ -90,7 +90,7 @@ var bot = controller.spawn({
 //
 controller.hears('!contractup', 'ambient', function(bot, message) {
     bot.say({
-        text: 'Contract has expired for ' + message.text.substr(message.text.indexOf('!contractup ') + 12),
+        text: 'Contract up ' + message.text.substr(message.text.indexOf('!contractup ') + 12),
         channel: 'G14CJLNP6'
     })
 });

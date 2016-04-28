@@ -95,7 +95,7 @@ controller.hears('!contractup', 'ambient', function(bot, message) {
     })
 });
 
-controller.hears(['testing channel'], 'direct_message,direct_mention,mention', function(bot, message) {
+controller.hears(['testing channel'], 'ambient', function(bot, message) {
     bot.say({
         text: 'testing ' + message.channel,
         channel: message.channel

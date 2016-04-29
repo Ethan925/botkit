@@ -90,7 +90,7 @@ var bot = controller.spawn({
 //
 controller.hears('!contractup', 'ambient', function(bot, message) {
     bot.say({
-        text: 'Contract up ' + message.text.substr(message.text.indexOf('!contractup ') + 12),
+        text: '@channel Contract up ' + message.text.substr(message.text.indexOf('!contractup ') + 12),
         channel: 'G100P3J9E'
     })
 });
